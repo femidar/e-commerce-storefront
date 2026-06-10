@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css"
 
 export default function App() {
   let url = "https://fakestoreapi.com/products";
@@ -19,8 +20,8 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <div id="products">
       <p>{loading === true && "Loading products..."}</p>
-    </>
+    </div>
   ) 
 }
