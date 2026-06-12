@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css"
+import "./components/Header/index"
 
 export default function App() {
   let url = "https://fakestoreapi.com/products";
@@ -21,6 +22,7 @@ export default function App() {
 
   return (
     <div id="products">
+      <Header />
       <p>{loading === true && "Loading products..."}</p>
     </div>
   ) 
