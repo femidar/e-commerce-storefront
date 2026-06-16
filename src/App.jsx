@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css"
-import "./components/Header/index"
+import Header from "./components/Header/index.jsx"
 
 export default function App() {
   let url = "https://fakestoreapi.com/products";
