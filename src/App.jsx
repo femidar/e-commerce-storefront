@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import "./App.css"
-import Header from "./components/Header/index.jsx"
+import "./App.css";
+import Header from "./components/Header/index.jsx";
+import Category from "./components/Category/index.jsx"
 
 export default function App() {
   let url = "https://fakestoreapi.com/products";
@@ -13,7 +14,7 @@ export default function App() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setProducts(data))
-      .finally(() => setLoading(false))
+      .finally(() => setLoading(false));
   }
 
   useEffect(() => {
@@ -22,8 +23,9 @@ export default function App() {
 
   return (
     <div id="products">
-      <Header />
+      <Header title="Femi E-commerce Store" />
       <p>{loading === true && "Loading products..."}</p>
+      <Category />
     </div>
-  ) 
+  );
 }

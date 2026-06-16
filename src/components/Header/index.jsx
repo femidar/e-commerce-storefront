@@ -1,9 +1,9 @@
 import "./header.css"
 
-export default function Header() {
+export default function Header({ title }) {
     return (
         <>
-            <h1>Femi E-commerce Store</h1>
+            <h1>{title}</h1>
         </>
     )
 }
